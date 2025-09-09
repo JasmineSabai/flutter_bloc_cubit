@@ -1,0 +1,30 @@
+{
+  "@@locale": "en",
+  "helloAgain": "Hello again!",
+  "welcome": "Welcome!",
+  "welcomeDescription": "Discover new things",
+  "welcomeBackDescription": "Welcome back & ",
+  "email": "Email",
+  "username": "Username",
+  "password": "Password",
+  "orLoginWith": "Or Login with",
+  "company": "company",
+  "isThatYou": "is that you?",
+
+  "biometric": "Biometric",
+  "microsoft": "Microsoft",
+  "google": "Google",
+
+  "login": "Login",
+  "skip": "Skip",
+  "proceed": "Proceed",
+  "addAnotherAccount": "Add another account",
+  "cancel": "Cancel",
+  "ok": "Ok",
+
+  "enterYour": "Enter your {arg}",
+
+  "update_available": "Update Available",
+  "update_description": "New version {arg} is available.",
+  "error": "Error"
+}

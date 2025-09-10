@@ -53,7 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
   _headerLogoWidgets() {
     return Column(
       children: [
-        SvgPicture.asset(AppAssets.logo, width: 100),
+        SvgPicture.network("https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/jsonatom.svg", width: 100),
       ],
     );
   }

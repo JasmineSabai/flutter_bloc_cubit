@@ -13,7 +13,7 @@ extension FireStoreNameLabel on FireStoreNames {
   String get displayName {
     switch (this) {
       case FireStoreNames.adsItems:
-        return 'ads_items';
+        return 'ad_items';
       case FireStoreNames.env:
         return 'env';
       case FireStoreNames.ads:

@@ -66,7 +66,7 @@ class _SplashScreenState extends State<SplashScreen> {
           }
         },
         child: Scaffold(
-          backgroundColor: Colors.white,
+          // backgroundColor: Colors.white,
           body: Center(
             child: SvgPicture.network("https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/jsonatom.svg"),
           ),

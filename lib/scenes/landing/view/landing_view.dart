@@ -51,10 +51,10 @@ class _LandingViewState extends State<LandingView> {
             children: [
               Text(
                 widget.label,
-                style: AppTextTheme.title2.copyWith(color: AppColors.primary),
+                style: AppTextTheme.title2(context).copyWith(color: AppColors.primary),
               ),
               SizedBox(height: 10),
-              Text(widget.description, style: AppTextTheme.body),
+              Text(widget.description, style: AppTextTheme.body(context)),
             ],
           ),
         ),

@@ -62,8 +62,8 @@ class _LoginScreenState extends State<LoginScreen> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(S.of(context)!.welcome, style: AppTextTheme.title1),
-        Text(S.of(context)!.welcomeDescription, style: AppTextTheme.body),
+        Text(S.of(context)!.welcome, style: AppTextTheme.title1(context)),
+        Text(S.of(context)!.welcomeDescription, style: AppTextTheme.body(context)),
       ],
     );
   }
@@ -72,10 +72,10 @@ class _LoginScreenState extends State<LoginScreen> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(S.of(context)!.helloAgain, style: AppTextTheme.title1),
+        Text(S.of(context)!.helloAgain, style: AppTextTheme.title1(context)),
         Text(
           '${S.of(context)!.welcomeBackDescription} ${S.of(context)!.welcomeDescription.toLowerCase()}',
-          style: AppTextTheme.body,
+          style: AppTextTheme.body(context),
         ),
       ],
     );
@@ -133,7 +133,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
         // ),
         SizedBox(height: 20),
-        Text(S.of(context)!.orLoginWith, style: AppTextTheme.body),
+        Text(S.of(context)!.orLoginWith, style: AppTextTheme.body(context)),
         SizedBox(height: 20),
 
         _loginOptionWidgets(),
@@ -200,14 +200,14 @@ class _LoginScreenState extends State<LoginScreen> {
     VoidCallback? onPressed,
   }) {
     return Container(
-      color: Colors.white,
+      color: Theme.of(context).cardColor,
       child: CustomTextButton(
         onPressed: onPressed,
         child: Row(
           children: [
             Iconify(iconString, color: AppColors.primary),
             SizedBox(width: 10),
-            Text(label, style: AppTextTheme.body),
+            Text(label, style: AppTextTheme.body(context)),
           ],
         ),
       ),

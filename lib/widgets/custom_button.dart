@@ -45,7 +45,7 @@ class _CustomButtonState extends State<CustomButton> {
         ),
         child: Text(
           widget.label,
-          style: AppTextTheme.body.copyWith(
+          style: AppTextTheme.body(context).copyWith(
             color: widget.isDisabled
                 ? AppColors.disable
                 : (widget.isLightColor ? AppColors.primary : widget.textColor),

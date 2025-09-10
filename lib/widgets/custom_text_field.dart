@@ -44,18 +44,16 @@ class _CustomTextFieldState extends State<CustomTextField> {
       children: [
         Text(
           widget.label,
-          style: AppTextTheme.body.copyWith(fontWeight: FontWeight.bold),
+          style: AppTextTheme.body(context).copyWith(fontWeight: FontWeight.bold),
         ),
         SizedBox(height: 10),
         TextField(
           obscureText: widget.isPassword,
           controller: widget.controller,
           decoration: InputDecoration(
-            filled: true,
-            fillColor: Colors.white,
             contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
             hintText: widget.hintText,
-            hintStyle: AppTextTheme.body.copyWith(color: Colors.grey),
+            hintStyle: AppTextTheme.body(context).copyWith(color: Colors.grey),
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(5)),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(5),
